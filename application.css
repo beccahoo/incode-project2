@@ -41,6 +41,27 @@
   width: 80%;
 }
 
+.grayboxes {
+  display: flex;
+}
+
+.firstbox {
+  background-color: #BDBDBD;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.icons {
+  width: 80%;
+  padding: 20px;
+}
+
+.intro {
+  font-weight: bold;
+}
 .row {
   display: flex;
 }
@@ -76,3 +97,4 @@
 body {
   background-color: #cccccc;
 }
+
