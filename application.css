@@ -59,9 +59,30 @@
   padding: 20px;
 }
 
-.intro {
+.noteprogram {
+  font-weight: bold;
+  margin: 10%;
+  width: 80%;
+  padding: auto;
+  margin-inline-start: 10%;
+}
+
+.opensign {
+  display: flex;
+}
+
+.opensignimg {
+  width: 20%;
+}
+
+.votre {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: darkslategray;
   font-weight: bold;
 }
+
 .row {
   display: flex;
 }
