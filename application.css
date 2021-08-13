@@ -16,7 +16,9 @@
   top: 2%;
   right: 80px;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
 }
+
 
 .topnav a {
   float: left;
@@ -29,11 +31,10 @@
 
 body {
   margin: 0;
-  padding: 0px 50px;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  
+  font-family: "Roboto", sans-serif;
 }
 
 .secondlogo {
@@ -50,8 +51,27 @@ body {
   width: 80%;
 }
 
+.textoverlapcontainer{
+  position: relative;
+}
+
+.overlaptext{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 17px;
+  color: #ffffff;
+  margin-left: auto;
+  font-size:xx-large;
+  font-family: "Roboto", sans-serif;
+  
+  
+}
+
+
 .grayboxes {
   display: flex;
+  padding: 50px;
 }
 
 .firstbox {
@@ -74,7 +94,20 @@ body {
     font-size: 0.875rem;
   }
   footer{
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .aboutcontainer{
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+    width: 110%;
+  }
+
+  .textblock{
+    width: 100%;
+    
   }
 }
 .icons {
@@ -172,6 +205,7 @@ body {
   text-align: center;
   color: #ffffff;
   width: 25%;
+  font-family: "Roboto", sans-serif;
 }
 
 .welcomemessage {
@@ -184,23 +218,43 @@ body {
 
 .font {
   text-align: center;
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width 768px) {
-
 }
 
 
-.firstabout {
+.aboutcontainer {
   display: flex;
+  text-align: left;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  }
+
+.textblock {
+  width: 50%;
+  padding: 20px auto;
 }
 
+.aboutpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40%;
+  padding: 50px, 50px, auto;
+  height: 100%;
+}
 
-
+.address {
+  padding: 50px;
+}
 
 .map {
-  padding: auto;
+  padding: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+
 }
