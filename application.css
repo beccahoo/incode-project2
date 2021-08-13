@@ -1,5 +1,5 @@
 .headercontainer {
-  background-color: #6a7bab;
+  background-color: #525e7e;
   overflow: hidden;
   display: flex;
 }
@@ -7,14 +7,14 @@
 .navlogo {
   width: 20%;
   height: 20%;
-  padding: 10px 30px;
+  padding: 10px 50px;
 }
 
 .topnav {
   overflow: hidden;
   position: absolute;
-  top: 35px;
-  right: 40px;
+  top: 2%;
+  right: 80px;
   color: #ffffff;
 }
 
@@ -25,6 +25,15 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0px 50px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .secondlogo {
@@ -46,25 +55,78 @@
 }
 
 .firstbox {
+  font-family: "Roboto", sans-serif;
   background-color: #BDBDBD;
   margin: 10px;
-  width: 100%;
+  width: 50%;
   text-align: center;
   color: #ffffff;
   font-weight: bold;
+  box-shadow: 0 0 4px gray;
+  font-size: smaller;
+  padding: 10px;
 }
 
-.icons {
-  width: 80%;
-  padding: 20px;
+@media screen and (max-width:768px){
+  .grayboxes {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+  footer{
+
+  }
 }
+.icons {
+  width: 30%;
+  padding: 20px;
+  color:rgb(32, 58, 32)
+}
+
+
+.button { 
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: #BAC2C8;
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 1 );
+  color: white;
+  border: none;
+  text-decoration : none;
+  display: block;
+  margin: 20px auto;
+}
+  
+
 
 .noteprogram {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin: 10%;
   width: 80%;
   padding: auto;
   margin-inline-start: 10%;
+  text-align: center;
+}
+
+.gridcontainer {
+  display: flex;
+}
+
+.gridcontaineritem {
+  padding: auto;
+  margin-inline-start: 10%;
+  text-align: center;
+}
+
+.closingtext{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 .opensign {
@@ -72,11 +134,12 @@
 }
 
 .opensignimg {
-  width: 20%;
+  width: 11%;
 }
 
 .votre {
-  margin: auto;
+  font-family: "Roboto", sans-serif;
+  margin: 70px 7px auto;
   width: 50%;
   padding: 10px;
   color: darkslategray;
@@ -99,7 +162,7 @@
 }
 
 .footer {
-  background-color: #6a7bab;
+  background-color: #525e7e;
   padding: 30px 0;
 }
 
@@ -116,6 +179,28 @@
 }
 
 body {
-  background-color: #cccccc;
+  background-color: #ebe9e9e3;
 }
 
+.font {
+  text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width 768px) {
+
+}
+
+
+.firstabout {
+  display: flex;
+}
+
+
+
+
+.map {
+  padding: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
