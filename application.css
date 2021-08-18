@@ -249,12 +249,66 @@ body {
 }
 
 .address {
-  padding: 50px;
+  padding: 40vh;
 }
 
 .map {
-  padding: 50px;
+  padding: 40vh;
   margin-top: 50px;
   margin-bottom: 50px;
 
+}
+
+.attend {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size:x-large
+}
+.dites {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size:x-large
+}
+
+.signupcontainer {
+  padding: 40vh; 
+}
+/* css for input form*/
+
+input{
+  background: gray;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+
+}
+
+.submitbutton{
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: #BAC2C8;
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 1 );
+  color: white;
+  border: none;
+  text-decoration : none;
+  display: block;
+  margin: 20px auto;
+}
+
+#modal {
+  display: block;
+  position: fixed;
+  width: 20vw;
+  height: 20vh;
+  background: white;
+  
 }

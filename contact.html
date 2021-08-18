@@ -10,46 +10,96 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Mr.Coffee by Bec from INCODE5</title>
+    <script src="formHandler.js" defer></script>
 </head>
 <body>
-    <div>
+    
+    <dialog id="modal">
+        <img class = "secondlogo" src = "assets/logo_mrcoffee.png">
+        MERCI 
+        Votre message a bien été envoyé !
+        Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee
+
+        FERMER
+    </dialog>
         
-        <header>
-            <div class = headercontainer> 
-                <img class = "navlogo" src = "assets/full_logo_white.png">
-                    <div class="topnav">
-                       <a href="/index.html">Home</a>
-                       <a href="/about.html">About</a>
-                       <a class="active" href="/contact.html">Contact</a>
-                    </div>
-                </div>   
-            </div>
-            
-            <div>
-                <img class = "secondlogo" src = "assets/logo_mrcoffee.png">
-            </div>
-        </header>
-    </div>
+    <header>
+        <div class = headercontainer> 
+            <img class = "navlogo" src = "assets/full_logo_white.png">
+                <div class="topnav">
+                    <a href="/index.html">Home</a>
+                    <a href="/about.html">About</a>
+                    <a class="active" href="/contact.html">Contact</a>
+                </div>
+            </div>   
+        </div>
+        
+        <div>
+            <img class = "secondlogo" src = "assets/logo_mrcoffee.png">
+        </div>
+    </header>
+
 
     
     <main>
-        <p class = "font"> Please come attend!</p>
 
-        <div class = "form">
-            Entering Form Code Here
-        </div>
-        <p class = address>
-            <strong>Mr.Coffee</strong> 
-            <br>15 place Jules Guesde
-            <br>75006 Paris
-            <br>
-            <br>Tel : +33 9 46 25 78 45
-            <br>Mail : contact@mr-coffee.com
-        </p>
+        <div class = "contactpagecenter">
+
+            <form id="contact" novalidate>
+                <div class="signupcontainer">
+                    <p class = "dites">Dites nous tout !</p>
+                    <br>
+                
+                    <div>
+                        <label for="name">Nom *</label>
+                        <input id="name" type="text" name="name" placeholder="First name and last name please" required>
+                    </div>
+                
+                    <div>
+                        <label for="name">Prénom *</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+            
+                    <div>
+                        <label for="email">Téléphone</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Adresse mail *</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Message *</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
+
+                    <div>
+                    <button type="sb">ENVOYER</button>
+                    </div>
+                </div>
+
+            </form>
+       
+        
+            <p class = "attend"> On vous attend !</p>
+            <p class = address>
+                <strong>Mr.Coffee</strong> 
+                <br>15 place Jules Guesde
+                <br>75006 Paris
+                <br>
+                <br>Tel : +33 9 46 25 78 45
+                <br>Mail : contact@mr-coffee.com
+            </p>
+
+
+
 
    
-     <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.1245243761796!2d2.318581415668544!3d48.83676341018328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris%2C%20France!5e0!3m2!1sen!2sau!4v1628775047551!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-       
+            <iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.1245243761796!2d2.318581415668544!3d48.83676341018328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b5590a00b1%3A0x2711ee015c1c2b2e!2s15%20Rue%20Jules%20Guesde%2C%2075014%20Paris%2C%20France!5e0!3m2!1sen!2sau!4v1628775047551!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
         
     </main>
 
