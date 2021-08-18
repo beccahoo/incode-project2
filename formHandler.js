@@ -23,12 +23,25 @@ function submitForm(event) {
 
     if (inputValid(validName, name) && inputValid(validEmail, email)) {
         console.log(`Name: ${name.value}\nEmail: ${email.value}`)
+        modal_container.classList.add(`show`);        
     }   else{
         console.log ('Inputs are incorrect. Please try again')
     }
-
+    
 }
 
 function inputValid(regex, input) {
     return regex.test(input.value)
 }
+
+const open = document.getElementById('open')
+const modal_container = document.getElementById ('modal_container')
+const close = document.getElementById('close')
+
+
+/*open.addEventListener(`click`,() =>{
+    modal_container.classList.add(`show`);
+});*/
+close.addEventListener(`click`,() =>{
+    modal_container.classList.remove(`show`);
+});

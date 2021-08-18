@@ -14,14 +14,21 @@
 </head>
 <body>
     
-    <dialog id="modal">
-        <img class = "secondlogo" src = "assets/logo_mrcoffee.png">
-        MERCI 
-        Votre message a bien été envoyé !
-        Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee
+    <div class = "modal-container" id="modal_container">
+        <div class="modal">
+            <div class="flex">
+                <img class = "contactlogo" src = "assets/logo_mrcoffee.png">
+                <div class = "thankyoutext">
+                    <h3><p>MERCI</p>
+                    <p>Votre message a bien été envoyé !</p></h3>
+                </div>
+            </div>
 
-        FERMER
-    </dialog>
+            <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>          
+
+            <button class = "button" id="close">FERMER</button>
+        </div>
+    </div>  
         
     <header>
         <div class = headercontainer> 
@@ -45,7 +52,7 @@
 
         <div class = "contactpagecenter">
 
-            <form id="contact" novalidate>
+            <form id="contact">
                 <div class="signupcontainer">
                     <p class = "dites">Dites nous tout !</p>
                     <br>
@@ -76,7 +83,7 @@
                     </div>
 
                     <div>
-                    <button type="sb">ENVOYER</button>
+                    <button class = "button" id="open">ENVOYER</button>
                     </div>
                 </div>
 

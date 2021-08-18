@@ -249,11 +249,11 @@ body {
 }
 
 .address {
-  padding: 40vh;
+  padding: 0px 40vh;
 }
 
 .map {
-  padding: 40vh;
+  padding: 0px 40vh;
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -271,7 +271,7 @@ body {
 }
 
 .signupcontainer {
-  padding: 40vh; 
+  padding: 0px 40vh; 
 }
 /* css for input form*/
 
@@ -286,29 +286,46 @@ input{
 
 }
 
-.submitbutton{
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  background: #BAC2C8;
-  width: 160px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 1 );
-  color: white;
-  border: none;
-  text-decoration : none;
-  display: block;
-  margin: 20px auto;
+
+.modal-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+ 
 }
 
-#modal {
-  display: block;
+
+.modal {
   position: fixed;
-  width: 20vw;
-  height: 20vh;
-  background: white;
-  
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: white;
 }
+
+.contactlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity:1;
+  display: flex;
+}
+
