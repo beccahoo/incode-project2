@@ -255,14 +255,15 @@ body {
 .map {
   padding: 0px 40vh;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20%;
 
 }
 
 .attend {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size:x-large
+  font-size:x-large;
+  margin-top: 10%;
 }
 .dites {
   text-align: center;
@@ -329,3 +330,6 @@ input{
   display: flex;
 }
 
+::-webkit-input-placeholder { 
+  color: lavender;
+}
